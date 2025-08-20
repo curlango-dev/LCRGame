@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class DadoLCR here.
+ * Dado para el juego Left-Center-Right.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Cecilia Curlango Rosas)
+ * @version (1.0 agosto 2025)
  */
 public class DadoLCR
 {

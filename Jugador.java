@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Jugador here.
+ * Jugador de Left-Center-Right.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Cecilia Curlango Rosas)
+ * @version (1.0 agosto 2025)
  */
 public class Jugador
 {

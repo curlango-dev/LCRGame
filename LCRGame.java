@@ -2,6 +2,8 @@
 /**
  * Juego Left-Center-Write.
  *
+ * Esta versión se desarrolló en el salón de clase.
+ * 
  * @author (Cecilia Curlango Rosas)
  * @version (1.0 agosto 2025)
  */

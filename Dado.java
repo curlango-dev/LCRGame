@@ -4,7 +4,7 @@ import java.util.Random;
  * Write a description of class Dado here.
  *
  * @author (Cecy Curlango Rosas)
- * @version (a version number or a date)
+ * @version (1.0 agosto 2025)
  */
 public class Dado
 {
