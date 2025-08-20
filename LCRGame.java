@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class LCRGame here.
+ * Juego Left-Center-Write.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Cecilia Curlango Rosas)
+ * @version (1.0 agosto 2025)
  */
 public class LCRGame
 {
