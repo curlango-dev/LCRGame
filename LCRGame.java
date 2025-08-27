@@ -31,6 +31,12 @@ public class LCRGame
         jugador3 = new Jugador();
     }
 
+    /**
+     * Determina si dos de los 3 jugadores se
+     * quedaron sin fichas. En ese caso, hay 
+     * ganador. El jugador ganador se asgina.
+     * @return true si sólo queda un jugador con fichas.
+     */
     public boolean esFinDeJuego() {
         int jugadoresEnCero = 0;
         boolean seTermino = false;
@@ -54,12 +60,21 @@ public class LCRGame
         }
         return seTermino;
     }
+    /**
+     * Regresa al jugador que ganó la partida.
+     * @return jugador ganador; si no se ha terminado
+     * el juego, regresa null.
+     */
     public Jugador getGanador() {
         if (!esFinDeJuego()) {
             return null;
         }
         return jugadorGanador;
     }
+    /**
+     * Según los valores de los dados que lanzó
+     * el jugador actual, reparte las fichas.
+     */
     public void procesarResultados() {
         int cuantosDados = jugadorActual.getFichas();
         char cara;
@@ -87,7 +102,12 @@ public class LCRGame
         }
     }
 
-    
+    /**
+     * Quita una ficha al jugador actual y 
+     * se la entrega al centro, al de la izquierda
+     * o al de la derecha, según lo que valga la cara.
+     * @param cara del dado.
+     */
     private void procesarCara(char cara){
         switch(cara) {
             case 'C':
@@ -105,6 +125,9 @@ public class LCRGame
         }
     }
 
+    /**
+     * Cambia el número del jugador en turno.
+     */
     public void cambiarTurno() {
         turno++;
         if (turno==4) {
@@ -112,6 +135,11 @@ public class LCRGame
         }
     }
 
+    /**
+     * Según quien sea el jugador en turno,
+     * asigna al jugador actual, al de la izquierda y
+     * al de la derecha.
+     */
     public void establecerJugadores() {
         switch (turno) {
             case 1:
@@ -132,6 +160,11 @@ public class LCRGame
         }
     }
 
+    /**
+     * Lanza los dados del juego. La cantidad
+     * de dados que se lanza depende de la cantidad
+     * de fichas que tiene el jugador actual.
+     */
     public void lanzarDados() {
         int fichas = jugadorActual.getFichas();
         switch (fichas) {
@@ -256,24 +289,52 @@ public class LCRGame
         dado2.lanzar();
         dado3.lanzar();
     }
+    /**
+     * Regresa al primer jugador.
+     * @return primer jugador
+     */
     public Jugador getJugador1() {
         return jugador1;
     }
+    /**
+     * Regresa al segundo jugador.
+     * @return segundo jugador
+     */
     public Jugador getJugador2() {
         return jugador2;
     }
+    /**
+     * Regresa al tercer jugador.
+     * @return tercer jugador
+     */
     public Jugador getJugador3() {
         return jugador3;
     }
+    /**
+     * Regresa el primer dado.
+     * @return primer dado del juego
+     */
     public DadoLCR getDado1() {
         return dado1;
     }
+    /**
+     * Regresa el segundo dado.
+     * @return segundo dado del juego
+     */
     public DadoLCR getDado2() {
         return dado2;
     }
+    /**
+     * Regresa el tercer dado.
+     * @return tercer dado del juego
+     */
     public DadoLCR getDado3() {
         return dado3;
     }
+    /**
+     * Regresa el centro del juego.
+     * @return centro del juego
+     */
     public Centro getCentro() {
         return centro;
     }

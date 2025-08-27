@@ -32,22 +32,38 @@ public class Dado
         valor = 1;
     }
     /**
-     * 
+     * Regresa el valor de la cara actual.
+     * @return valor de la cara actual.
      */
     public int getValor() {
         return valor;
     }
-    
+    /**
+     * Cambia el valor de la cara actual
+     * al que recibe.
+     * @param nuevo valor de la cara actual.
+     */
     public void setValor(int nuevoValor) {
         valor = nuevoValor;
     }
-    
+    /**
+     * Regresa el tamaño del dado.
+     * @return cantidad de caras que tiene el dado.
+     */
     public int getCaras() {
         return caras;
     }
+    /**
+     * Cambia la cantidad de caras que tiene el dado.
+     * @return cantidad de caras que tendrá el dado
+     */
     public void setCaras(int caras) {
         this.caras = caras;
     }
+    /**
+     * Lanza el dado y regresa el valor que cae.
+     * @param nuevo valor de la cara
+     */
     public int lanzar() {
         Random aleatorio;
         aleatorio = new Random();

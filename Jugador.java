@@ -40,9 +40,18 @@ public class Jugador
     public int getFichas() {
         return fichas;
     }
+    
+    /**
+     * Resta fichas a las que tiene.
+     * @param las fichas que se van a quitar.
+     */
     public void retirarFichas(int cuantas) {
         fichas -= cuantas;
     }
+    /**
+     * Agrega fichas a las que tiene.
+     * @param las fichas que se van a agregar.
+     */
     public void agregarFichas(int cantidad) {
         fichas += cantidad;
     }
