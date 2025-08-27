@@ -1,7 +1,9 @@
 import java.util.Random;
 
 /**
- * Write a description of class Dado here.
+ * Modela un dado. Por default es un dado
+ * de 6 lados. Se puede crear un dado con
+ * una cantidad de lados específica.
  *
  * @author (Cecy Curlango Rosas)
  * @version (1.0 agosto 2025)
@@ -12,19 +14,26 @@ public class Dado
     private int valor;
 
     /**
-     * Constructor for objects of class Dado
+     * Crea un dado de 6 lados.
      */
     public Dado()
     {
-        // initialise instance variables
         caras = 6;
         valor = 1;
     }
 
+    /**
+     * Crea un dado con la cantidad de lados
+     * especificada.
+     * @param Cantidad de lados que tendrá el dado.
+     */
     public Dado(int lados) {
         caras = lados;
         valor = 1;
     }
+    /**
+     * 
+     */
     public int getValor() {
         return valor;
     }

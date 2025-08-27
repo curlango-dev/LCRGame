@@ -9,10 +9,19 @@ public class DadoLCR
 {
     private Dado dado;
 
+    /**
+     * Crea el dado regular de 6 lados.
+     */
     public DadoLCR() {
         dado = new Dado();
     }
 
+    /**
+     * Obtiene la cara actual del dado.
+     * Esto se hace convirtiendo el valor
+     * del dado interno al valor del dado LCR.
+     * @return El carácter de la cara actual.
+     */
     public char getValor() {
         char valor = 'C';
         int elValorQueTieneElDado = dado.getValor();
@@ -35,6 +44,11 @@ public class DadoLCR
         }
         return valor;
     }
+    /**
+     * Lanza el dado y regresa el carácter
+     * que cae en la cara.
+     * @return El carácter de la cara actual.
+     */
     public char lanzar() {
         char valor = 'C';
 
