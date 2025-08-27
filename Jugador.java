@@ -40,4 +40,10 @@ public class Jugador
     public int getFichas() {
         return fichas;
     }
+    public void retirarFichas(int cuantas) {
+        fichas -= cuantas;
+    }
+    public void agregarFichas(int cantidad) {
+        fichas += cantidad;
+    }
 }
