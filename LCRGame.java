@@ -256,4 +256,26 @@ public class LCRGame
         dado2.lanzar();
         dado3.lanzar();
     }
+    public Jugador getJugador1() {
+        return jugador1;
+    }
+    public Jugador getJugador2() {
+        return jugador2;
+    }
+    public Jugador getJugador3() {
+        return jugador3;
+    }
+    public DadoLCR getDado1() {
+        return dado1;
+    }
+    public DadoLCR getDado2() {
+        return dado2;
+    }
+    public DadoLCR getDado3() {
+        return dado3;
+    }
+    public Centro getCentro() {
+        return centro;
+    }
+    
 }
